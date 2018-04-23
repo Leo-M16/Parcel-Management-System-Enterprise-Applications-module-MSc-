@@ -15,9 +15,8 @@ xmlns:f= "http://java.sun.com/jsf/core ">
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     </head>
     <body>
-        <h:form>
-            <h:inputText id="id" value="#{customer_UI.city}" required="true" requiredMessage="Please Enter a record id!"></h:inputText>
-            <h:commandButton type="submit" value="Submit" action="#{customer_UI.branchAddresses}"> </h:commandButton>
-        </h:form>
+        <h:outputText value="#{customer_UI.localAddress}" />
     </body>
+        
+    
 </html>

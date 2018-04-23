@@ -21,6 +21,7 @@ public class Customer_UI implements Customer_UIRemote {
 
     // Add business logic below. (Right-click in editor and choose
     // "Insert Code > Add Business Method")
+    @Override
     public BranchAddressesDTO findCompanyAddress(String city){
         return oh.findCompanyAddress(city);
         
