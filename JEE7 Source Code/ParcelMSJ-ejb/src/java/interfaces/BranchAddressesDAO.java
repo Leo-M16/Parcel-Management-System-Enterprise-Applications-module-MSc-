@@ -4,7 +4,8 @@
  * and open the template in the editor.
  */
 package interfaces;
-import entity.BranchAddresses;
+
+import dto.BranchAddressesDTO;
 
 /**
  *
@@ -12,6 +13,6 @@ import entity.BranchAddresses;
  */
 public interface BranchAddressesDAO {
     
-   public BranchAddresses findCompanyAddress(String city);
+   public BranchAddressesDTO findCompanyAddress(String city);
     
 }
