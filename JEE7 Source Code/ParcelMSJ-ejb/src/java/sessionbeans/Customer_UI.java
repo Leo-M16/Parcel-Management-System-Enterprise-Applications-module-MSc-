@@ -5,8 +5,10 @@
  */
 package sessionbeans;
 
+import dto.BranchAddressesDTO;
 import javax.ejb.Stateless;
 import entity.*;
+import javax.ejb.EJB;
 
 /**
  *
@@ -14,11 +16,13 @@ import entity.*;
  */
 @Stateless
 public class Customer_UI implements Customer_UIRemote {
+    @EJB 
+    private OrdersHandlerDAO oh;
 
     // Add business logic below. (Right-click in editor and choose
     // "Insert Code > Add Business Method")
-    public BranchAddresses findCompanyAddress(String city){
-        
+    public BranchAddressesDTO findCompanyAddress(String city){
+        return oh.findCompanyAddress(city);
         
     }
     
