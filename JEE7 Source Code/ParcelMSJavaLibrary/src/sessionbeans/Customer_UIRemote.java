@@ -5,6 +5,7 @@
  */
 package sessionbeans;
 
+import dto.BranchAddressesDTO;
 import javax.ejb.Remote;
 
 /**
@@ -13,5 +14,7 @@ import javax.ejb.Remote;
  */
 @Remote
 public interface Customer_UIRemote {
+
+    public BranchAddressesDTO findCompanyAddress(String city);
     
 }
