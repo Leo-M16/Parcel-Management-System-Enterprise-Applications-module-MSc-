@@ -16,7 +16,7 @@ import dto.BranchAddressesDTO;
  *
  * @author Leo
  */
-@Stateless
+@Stateless(mappedName="ordershandlerdao")
 public class OrdersHandlerDAO implements OrdersHandlerDAORemote, BranchAddressesDAO {
 
     @PersistenceContext(unitName = "ParcelMSJ-ejbPU")

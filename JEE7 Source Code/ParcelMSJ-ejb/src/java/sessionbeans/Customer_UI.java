@@ -7,15 +7,15 @@ package sessionbeans;
 
 import dto.BranchAddressesDTO;
 import javax.ejb.Stateless;
-import entity.*;
+import java.io.Serializable;
 import javax.ejb.EJB;
 
 /**
  *
  * @author Leo
  */
-@Stateless
-public class Customer_UI implements Customer_UIRemote,serializable {
+@Stateless(mappedName="customer_ui")
+public class Customer_UI implements Customer_UIRemote,Serializable {
     @EJB 
     private OrdersHandlerDAO oh;
 
