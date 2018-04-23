@@ -7,12 +7,14 @@ package sessionbeans;
 
 import javax.ejb.Remote;
 import dto.*;
+import javax.ejb.Stateless;
 
 /**
  *
  * @author Leo
  */
 @Remote
+
 public interface OrdersHandlerDAORemote {
 
     public void persist(Object object);

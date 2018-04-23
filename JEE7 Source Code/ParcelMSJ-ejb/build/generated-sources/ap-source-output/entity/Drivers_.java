@@ -7,7 +7,7 @@ import javax.persistence.metamodel.CollectionAttribute;
 import javax.persistence.metamodel.SingularAttribute;
 import javax.persistence.metamodel.StaticMetamodel;
 
-@Generated(value="EclipseLink-2.5.2.v20140319-rNA", date="2018-04-23T14:25:25")
+@Generated(value="EclipseLink-2.5.2.v20140319-rNA", date="2018-04-23T16:14:52")
 @StaticMetamodel(Drivers.class)
 public class Drivers_ { 
 

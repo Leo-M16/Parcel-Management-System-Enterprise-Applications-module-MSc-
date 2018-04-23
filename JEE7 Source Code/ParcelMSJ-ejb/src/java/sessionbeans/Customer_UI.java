@@ -15,7 +15,7 @@ import javax.ejb.EJB;
  * @author Leo
  */
 @Stateless
-public class Customer_UI implements Customer_UIRemote {
+public class Customer_UI implements Customer_UIRemote,serializable {
     @EJB 
     private OrdersHandlerDAO oh;
 
