@@ -5,8 +5,8 @@
  */
 package sessionbeans;
 
-import entity.BranchAddresses;
 import javax.ejb.Remote;
+import dto.*;
 
 /**
  *
@@ -17,6 +17,6 @@ public interface OrdersHandlerDAORemote {
 
     public void persist(Object object);
 
-    public BranchAddresses findCompanyAddress(String city);
+    public BranchAddressesDTO findCompanyAddress(String city);
     
 }

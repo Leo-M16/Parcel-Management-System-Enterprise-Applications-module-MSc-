@@ -4,11 +4,14 @@
  * and open the template in the editor.
  */
 package interfaces;
+import entity.BranchAddresses;
 
 /**
  *
  * @author Leo
  */
 public interface BranchAddressesDAO {
+    
+   public BranchAddresses findCompanyAddress(String city);
     
 }

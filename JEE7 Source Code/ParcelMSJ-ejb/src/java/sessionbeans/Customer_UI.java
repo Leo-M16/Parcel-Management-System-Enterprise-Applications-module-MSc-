@@ -6,6 +6,7 @@
 package sessionbeans;
 
 import javax.ejb.Stateless;
+import entity.*;
 
 /**
  *
@@ -16,4 +17,9 @@ public class Customer_UI implements Customer_UIRemote {
 
     // Add business logic below. (Right-click in editor and choose
     // "Insert Code > Add Business Method")
+    public BranchAddresses findCompanyAddress(String city){
+        
+        
+    }
+    
 }

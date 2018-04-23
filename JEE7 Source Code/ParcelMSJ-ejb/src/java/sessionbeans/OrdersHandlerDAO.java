@@ -10,6 +10,7 @@ import interfaces.BranchAddressesDAO;
 import javax.ejb.Stateless;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
+import dto.BranchAddressesDTO;
 
 /**
  *
@@ -29,10 +30,10 @@ public class OrdersHandlerDAO implements OrdersHandlerDAORemote, BranchAddresses
     // Add business logic below. (Right-click in editor and choose
     // "Insert Code > Add Business Method")
     @Override
-       public BranchAddresses findCompanyAddress(String city){
+       public BranchAddressesDTO findCompanyAddress(String city){
           BranchAddresses BranchAddress=new BranchAddresses();
         BranchAddress = em.find(BranchAddresses.class, city);
-        return BranchAddress;
+        return new BranchAddressesDTO(BranchAddress.getBranchId(),BranchAddress.getCity(),BranchAddress.getAddress());
        };
 
 }
