@@ -44,7 +44,7 @@ private BranchAddressesDTO localaddress;
     public Customer_UI() {
     }
     
-    public String getBranchAddresses(){
+    public String findBranchAddresses(){
         
         this.localaddress= Customer_UIRemote_session_bean.findCompanyAddress(city);
         return "Success";
