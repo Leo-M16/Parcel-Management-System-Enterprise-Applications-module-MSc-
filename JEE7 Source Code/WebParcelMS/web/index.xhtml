@@ -6,8 +6,10 @@
         <title>Facelet Title</title>
     </h:head>
     <h:body>
+        <h:form>
         <h:inputText id="id" value="#{customer_UI.city}" required="true" requiredMessage="Please Enter a record id!"></h:inputText>
-            <h:commandButton type="submit" value="Submit" action="#{customer_UI.branchAddresses}"> </h:commandButton>
+        <h:commandButton type="submit" value="Submit" action="#{customer_UI.branchAddresses}"> </h:commandButton>
+        </h:form>
     </h:body>
 </html>
 
